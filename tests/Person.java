@@ -28,8 +28,8 @@ public class Person {
 		//Mock ready
 		EasyMock.replay(card1); //activating the expected behaviour
 		EasyMock.replay(mufasa1);
-		if(mufasa1.testattachment(card1, "123") && card1.getBalance() - 0.01 > 0.00) {
-			BankAccount bank1 = new BankAccount("StreetAddress", "city", "5646854", "Country", "password", card1, mufasa1, "123");
+		if(mufasa1.testattachment(card1, "123") && card1.getBalance() - 0.01 >= 0.00) {
+			BankAccount bank1 = new BankAccount("StreetAddress", "city", "5646854", "Country", "password", card1);
 			assertEquals(5.50, bank1.getBalance(), 0.0);
 			System.out.println("BankAccount created successfully.");
 		}	
@@ -45,7 +45,7 @@ public class Person {
 		EasyMock.replay(card1); //activating the expected behaviour
 		EasyMock.replay(mufasa1);
 		if(mufasa1.testattachment(card1, "435") && card1.getBalance() - 0.01 >= 0.00) {
-				BankAccount bank1 = new BankAccount("StreetAddress", "city", "5646854", "Country", "password", card1, mufasa1, "123");
+				BankAccount bank1 = new BankAccount("StreetAddress", "city", "5646854", "Country", "password", card1);
 		}	
 		else {
 			System.out.println("BankAccount creation failed, check your credit card informations or your current balance (You need at least 0.01$ inside your credit card)!");
@@ -63,7 +63,7 @@ public class Person {
 		EasyMock.replay(card1); //activating the expected behaviour
 		EasyMock.replay(mufasa1);
 		if(mufasa1.testattachment(card1, "123") && card1.getBalance() - 0.01 >= 0.00) {
-				BankAccount bank1 = new BankAccount("StreetAddress", "city", "5646854", "Country", "password", card1, mufasa1, "123");
+				BankAccount bank1 = new BankAccount("StreetAddress", "city", "5646854", "Country", "password", card1);
 		}	
 		else {
 			System.out.println("BankAccount creation failed, check your credit card informations or your current balance (You need at least 0.01$ inside your credit card)!");

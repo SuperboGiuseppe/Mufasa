@@ -8,7 +8,7 @@ public class BankAccount {
 	private String password;
 	private CreditCard creditcard;
 	
-	public BankAccount(String street_address, String city, String postalcode, String country, String password, CreditCard creditcard, Mufasa mufasa, String cvc) {
+	public BankAccount(String street_address, String city, String postalcode, String country, String password, CreditCard creditcard) {
 		this.setStreetAddress(street_address);
 		this.setCity(city);
 		this.setPostalcode(postalcode);
