@@ -14,8 +14,7 @@ public class BankAccount {
 		this.setPostalcode(postalcode);
 		this.setCountry(country);
 		this.setPassword(password);
-		if(mufasa.testattachment(creditcard, cvc))
-			this.setCreditCard(creditcard);
+		this.setCreditCard(creditcard);
 	}
 	
 	public String getStreetAddress() {
